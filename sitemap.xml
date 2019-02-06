@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://jongrumer.github.io/rhyze/</loc>
+     <loc>https://jongrumer.github.io/sumo-doc/</loc>
      <lastmod>2019-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://jongrumer.github.io/rhyze/about/</loc>
+     <loc>https://jongrumer.github.io/sumo-doc/installation/</loc>
+     <lastmod>2019-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://jongrumer.github.io/sumo-doc/anders_readme/</loc>
      <lastmod>2019-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>

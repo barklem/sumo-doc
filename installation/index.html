@@ -13,6 +13,8 @@
         <meta name="description" content="SUMO Documentataion">
       
       
+        <link rel="canonical" href="https://jongrumer.github.io/sumo-doc/installation/">
+      
       
         <meta name="author" content="The SUMO Team">
       
@@ -35,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/sumo-doc/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.3.0">
     
     
       
-        <title>SUMO Doc.</title>
+        <title>Installation - SUMO Doc.</title>
       
     
     
-      <link rel="stylesheet" href="/sumo-doc/assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
       
-        <link rel="stylesheet" href="/sumo-doc/assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -55,7 +57,7 @@
       
     
     
-      <script src="/sumo-doc/assets/javascripts/modernizr.962652e9.js"></script>
+      <script src="../assets/javascripts/modernizr.962652e9.js"></script>
     
     
       
@@ -64,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="/sumo-doc/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -128,7 +130,7 @@
                 SUMO Doc.
               </span>
               <span class="md-header-nav__topic">
-                
+                Installation
               </span>
             
           
@@ -245,7 +247,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/sumo-doc/." title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -255,11 +257,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="/sumo-doc/installation/" title="Installation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Installation" class="md-nav__link md-nav__link--active">
       Installation
     </a>
+    
   </li>
 
     
@@ -269,7 +278,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/sumo-doc/anders_readme/" title="Anders' readme" class="md-nav__link">
+    <a href="../anders_readme/" title="Anders' readme" class="md-nav__link">
       Anders' readme
     </a>
   </li>
@@ -286,8 +295,43 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
-
+                
+                  <a href="https://github.com/jongrumer/sumo-doc/edit/master/docs/installation.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Installation</h1>
+                
+                <p>After making sure that the Makefile is set up acording to your system, the compilation of the code is done by simply running<br />
+<div class="codehilite"><pre><span></span>make all
+</pre></div>
+in the command prompt while standing in SUMO's main directory.</p>
+<div class="admonition info">
+<p class="admonition-title">gfortran</p>
+<p>The compilation is performed with gcc/gfortran per default. Make sure you have the latest version of <code>gfortran</code> installed. If you would like to use another compiler, modify the Makefile acordingly. Further instructions are found in this file.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Lapack and Blas</p>
+<p>The codes depend on Lapack and Blas<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> so make sure you have these installed. If not, then install <code>liblapack-dev</code> and <code>libblas-dev</code> or similar.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">OpenMPI</p>
+<p>The codes also depend on MPI for paralellization. Make sure you have some implementation of MPI installed, e.g. OpenMPI: <code>libopenmpi-bin</code>, <code>libopenmpi-dbg</code> and <code>libopenmp-dev</code>.</p>
+</div>
+<p>The installation may be cleaned up (i.e. remove redundant files) in a standard manner.
+<div class="codehilite"><pre><span></span>make clean 
+</pre></div></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://www.netlib.org/">www.netlib.org</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
               
                 
 
@@ -300,6 +344,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../anders_readme/" title="Anders' readme" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Anders' readme
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -324,28 +403,28 @@
       
     </div>
     
-      <script src="/sumo-doc/assets/javascripts/application.a353778b.js"></script>
+      <script src="../assets/javascripts/application.a353778b.js"></script>
       
         
         
           
-          <script src="/sumo-doc/assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
           
             
               
               
-                <script src="/sumo-doc/assets/javascripts/lunr/lunr.sv.js"></script>
+                <script src="../assets/javascripts/lunr/lunr.sv.js"></script>
               
             
           
           
-            <script src="/sumo-doc/assets/javascripts/lunr/lunr.multi.js"></script>
+            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:"/sumo-doc"}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
