@@ -1,8 +1,6 @@
 # sumo-doc
 SUMO Documentation with Markdown using MkDocs including Math support
 
-### OBS: never edit anything in the site directory, nor the gh-pages, directly!
-
 ## Get started
 To work with the documentaton you need to install MkDocs, the Material theme and an extension package:
 1. MkDocs Installation: https://www.mkdocs.org/#installation
@@ -23,4 +21,4 @@ Use ```mkdocs gh-deploy --help``` to get a full list of options available for th
 Be aware that you will not be able to review the built site before it is pushed to GitHub. Therefore, you may want to verify any changes you make to the docs beforehand by using the build or serve commands and reviewing the built files locally.
 
 ### Warning!
-You should never edit files in your pages repository by hand if you're using the gh-deploy command because you will lose your work the next time you run the command.
+You should **never** edit files in your gh-pages repository, nor the sites folder, by hand if you're using the gh-deploy command because you will lose your work the next time you run the command. Edit the .md files and let ```mkdocs gh-deploy``` do the magic.
