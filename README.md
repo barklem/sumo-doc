@@ -1,6 +1,9 @@
 # sumo-doc
-SUMO Documentation with Markdown using MkDocs
+SUMO Documentation with Markdown using MkDocs including Math support
 
+### OBS: never edit anything in the site directory, nor the gh-pages, directly!
+
+## Get started
 To work with the documentaton you need to install MkDocs, the Material theme and an extension package:
 1. MkDocs Installation: https://www.mkdocs.org/#installation
 2. Install Material theme for MkDocs: https://squidfunk.github.io/mkdocs-material
