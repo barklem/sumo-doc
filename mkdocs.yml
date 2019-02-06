@@ -1,23 +1,23 @@
 # Project information
-site_name: 'RHYZE Doc.'
-site_description: 'An extension module to GRASP for treating Hyperfine-Zeeman dependent states and transitions'
-site_author: 'Jon Grumer'
-site_url: 'https://jongrumer.github.io/rhyze'
+site_name: 'SUMO Doc.'
+site_description: 'SUMO Documentataion'
+site_author: 'The SUMO Team'
+site_url: 'https://jongrumer.github.io/sumo-doc'
 
 # Repository
-repo_name: 'jongrumer/rhyze'
-repo_url: 'https://github.com/jongrumer/rhyze'
+repo_name: 'jongrumer/sumo-doc'
+repo_url: 'https://github.com/jongrumer/sumo-doc'
 
 # Copyright
-copyright: 'Copyright &copy; 2019 Jon Grumer'
+copyright: 'Copyright &copy; 2019 The SUMO Team'
 
 # Configuration
 theme:
   name: 'material'
   language: 'en'
   palette:
-    primary: 'blue grey'
-    accent: 'cyan'
+    primary: 'indigo'
+    accent: 'dark orange'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -56,4 +56,5 @@ markdown_extensions:
 # Navigation
 nav:
     - Home: index.md
-    - About: about.md
+    - Installation: installation.md
+    - Anders' readme: anders_readme.md
