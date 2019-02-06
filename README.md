@@ -7,7 +7,7 @@ To work with the documentaton you need to install MkDocs, the Material theme and
 2. Install Material theme for MkDocs: https://squidfunk.github.io/mkdocs-material
 3. Install PyMdown extension for e.g. LaTeX-style math support: https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
 
-### Project Pages
+### Project Pages (from MkDocs)
 GitHub Project Pages sites are simple as the site files get deployed to a branch within the project repository (gh-pages by default). After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:
 
 ``` bash
