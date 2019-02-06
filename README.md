@@ -1,11 +1,13 @@
 # sumo-doc
 SUMO Documentation with Markdown using MkDocs
 
-## Instructions (from MkDocs): GitHub Pages
-If you host the source code for a project on GitHub, you can easily use GitHub Pages to host the documentation for your project. There are two basic types of GitHub Pages sites: Project Pages sites, and User and Organization Pages sites. They are nearly identical but have some important differences, which require a different work flow when deploying.
+To work with the documentaton you need to install MkDocs, the Material theme and an extension package:
+1. MkDocs Installation: https://www.mkdocs.org/#installation
+2. Install Material theme for MkDocs: https://squidfunk.github.io/mkdocs-material
+3. Install PyMdown extension for e.g. LaTeX-style math support: https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
 
 ### Project Pages
-Project Pages sites are simpler as the site files get deployed to a branch within the project repository (gh-pages by default). After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:
+GitHub Project Pages sites are simple as the site files get deployed to a branch within the project repository (gh-pages by default). After you checkout the primary working branch (usually master) of the git repository where you maintain the source documentation for your project, run the following command:
 
 ``` bash
 mkdocs gh-deploy
