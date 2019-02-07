@@ -1,0 +1,642 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="SUMO Documentataion">
+      
+      
+        <link rel="canonical" href="https://jongrumer.github.io/sumo-doc/readme_updated/">
+      
+      
+        <meta name="author" content="The SUMO Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en, sv">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.3.0">
+    
+    
+      
+        <title>Readme updated - SUMO Doc.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.962652e9.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="dark-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#prepare-the-environment" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://jongrumer.github.io/sumo-doc" title="SUMO Doc." class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                SUMO Doc.
+              </span>
+              <span class="md-header-nav__topic">
+                Readme updated
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/jongrumer/sumo-doc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      jongrumer/sumo-doc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://jongrumer.github.io/sumo-doc" title="SUMO Doc." class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    SUMO Doc.
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/jongrumer/sumo-doc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      jongrumer/sumo-doc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../anders_readme/" title="Anders' readme" class="md-nav__link">
+      Anders' readme
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-the-environment" title="PREPARE THE ENVIRONMENT" class="md-nav__link">
+    PREPARE THE ENVIRONMENT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compilation" title="COMPILATION" class="md-nav__link">
+    COMPILATION
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ex-suse-dont-run-yet-see-first-preparation-of-input-files-below" title="Ex suse (don't run yet, see first preparation of input files below):" class="md-nav__link">
+    Ex suse (don't run yet, see first preparation of input files below):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex-sumo-always-after-suse" title="Ex sumo (always after suse):" class="md-nav__link">
+    Ex sumo (always after suse):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ex-suib-always-after-sumo" title="Ex suib (always after sumo):" class="md-nav__link">
+    Ex suib (always after sumo):
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparing-input-files" title="PREPARING INPUT FILES" class="md-nav__link">
+    PREPARING INPUT FILES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examining-the-output" title="EXAMINING THE OUTPUT" class="md-nav__link">
+    EXAMINING THE OUTPUT
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/jongrumer/sumo-doc/edit/master/docs/readme_updated.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Readme updated</h1>
+                
+                <p>SUMO - Supernova MOnte Carlo code.</p>
+<p>Papers : Jerkstrand, Fransson &amp; Kozma 2011, see also
+Jerkstrand et al. 2012, Jerkstrand et al. 2015 (A&amp;A).</p>
+<p>This file created by A. Jerkstrand <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#100;&#101;&#114;&#115;&#64;&#109;&#112;&#97;&#45;&#103;&#97;&#114;&#99;&#104;&#105;&#110;&#103;&#46;&#109;&#112;&#103;&#46;&#100;&#101;">&#97;&#110;&#100;&#101;&#114;&#115;&#64;&#109;&#112;&#97;&#45;&#103;&#97;&#114;&#99;&#104;&#105;&#110;&#103;&#46;&#109;&#112;&#103;&#46;&#100;&#101;</a>.</p>
+<h2 id="prepare-the-environment">PREPARE THE ENVIRONMENT<a class="headerlink" href="#prepare-the-environment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Make a folder for scratch reading and writing (sometime large files are created). </p>
+</li>
+<li>
+<p>Go to the scratch folder, and type
+<div class="codehilite"><pre><span></span>     mkdir mcphotons
+     mkdir mcphotons/radfield
+     mkdir modelspectra
+</pre></div></p>
+</li>
+<li>
+<p>The code needs access to the LAPACK and BLAS mathematical libraries. If you do not have these installed, download them from <a href="http://www.netlib.org">www.netlib.org</a> and install. </p>
+</li>
+<li>
+<p>To run the installation some environmental variables need to be set. These depend on the compiler you want to use.</p>
+</li>
+</ol>
+<p>If using an <strong>ifort</strong> compiler add the following lines to your .bashrc:
+<div class="codehilite"><pre><span></span>     <span class="nb">export</span> <span class="nv">MPI_FC</span><span class="o">=</span><span class="s1">&#39;mpiifort&#39;</span>
+     <span class="nb">export</span> <span class="nv">DD</span><span class="o">=</span><span class="s1">&#39;location-of-scratch-folder&#39;</span> <span class="c1">#(replace with relevant path and names!!)</span>
+     <span class="nb">export</span> <span class="nv">SUMOLIBS</span><span class="o">=</span><span class="s1">&#39;location-of-BLAS-library location-of-LAPACK-library&#39;</span><span class="c1">#(replace with relevant path and names!!)</span>
+</pre></div>
+DD should point to the scratch folder, and SUMOLIBS should point the BLAS and LAPACK libraries. </p>
+<p>To use MKL library files for BLAS and LAPACK, instead use
+<div class="codehilite"><pre><span></span><span class="nv">SUMOLIBS</span><span class="o">=</span><span class="s1">&#39;$(MKLROOT)/lib/em64t/libmkl_lapack95_lp64.a -Wl,--start-group $(MKLROOT)/lib/em64t/libmkl_intel_lp64.a $(MKLROOT)/lib/em64t/libmkl_intel_thread.a $(MKLROOT)/lib/em64t/libmkl_core.a -Wl,--end-group -L$(MKLROOT)/lib/em64t -liomp5 -lpthread&#39;</span>
+</pre></div>
+If using <strong>gfortran</strong> compiler add the following lines to your .bashrc:
+<div class="codehilite"><pre><span></span>     <span class="nb">export</span> <span class="nv">MPI_FC</span><span class="o">=</span><span class="s1">&#39;mpifort&#39;</span>
+     <span class="nb">export</span> <span class="nv">DD</span><span class="o">=</span><span class="s1">&#39;location-of-scratch-folder&#39;</span> <span class="c1">#(replace with relevant path and names!!)</span>
+     <span class="nb">export</span> <span class="nv">SUMOLIBS</span><span class="o">=</span><span class="s1">&#39;-L/location-of-LAPACK-and-BLAS -llpack -lblas&#39;</span> <span class="c1">#(replace with relevant path and names!!)</span>
+</pre></div></p>
+<p>DD should point to the scratch folder, and in SUMOLIBS <code>location-of-lapack-and-blas</code> should be replaced with the path to the folder containing the lapack and blas libraries on your computer. NOTE the <code>-L</code> flag! </p>
+<h2 id="compilation">COMPILATION<a class="headerlink" href="#compilation" title="Permanent link">&para;</a></h2>
+<p>The code compiles with a Makefile.</p>
+<p>Compilation is by default with <code>-O3</code> optimization, edit this in
+<code>FFLAGS=...</code> if needed.</p>
+<p>Go into the folder where you unpacked the code and run
+<div class="codehilite"><pre><span></span>     make all
+</pre></div>
+Compilation creates a large set of executables (currently 12), most of
+which are used sequentially in an iteration loop.
+The main code is made of the three executables</p>
+<ul>
+<li>"suse" : Calculates temperatures, excitation and ionization statistical equilibria, and
+emissivities (radiative terms and ionization balance fixed)</li>
+<li>"sumo" : Runs Monte Carlo simulation of radiation field (temperatures,
+excitation and ionization statistical equilibria fixed)</li>
+<li>"suib" : Calculates ionization statistical equilibria (temperatures, 
+radiative terms fixed).</li>
+</ul>
+<p>These three are iterated until convergence is achieved. Information on how to
+construct wrapped and test for convergence to be added..</p>
+<h3 id="ex-suse-dont-run-yet-see-first-preparation-of-input-files-below">Ex suse (don't run yet, see first preparation of input files below):<a class="headerlink" href="#ex-suse-dont-run-yet-see-first-preparation-of-input-files-below" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>mpirun -np <span class="m">19</span> suse example file_modelparameters_example y n <span class="m">500</span> <span class="m">10000</span> <span class="m">1</span> &gt; outfile_suse
+</pre></div>
+
+<p>Run model with name <code>example</code>, and run-file named <code>file_modelparameters_example</code>. The <code>y</code>
+means compute the gamma-ray deposition (only needed once),
+the <code>n</code> means this is not an iterative run (but the first one),
+<code>500</code> means start at 500 A, <code>10000</code> means end at 10000 A, <code>1</code> means
+use resolution of 1 A (at 1000 A). The numer of processes (<code>19</code> here) has
+to be the number of zones in the model plus one; so here the
+model must have 18 zones.
+In the first iteration one should
+use the combination "y n", whereas later on "n y" should be used.</p>
+<h3 id="ex-sumo-always-after-suse">Ex sumo (always after suse):<a class="headerlink" href="#ex-sumo-always-after-suse" title="Permanent link">&para;</a></h3>
+<p><div class="codehilite"><pre><span></span>mpirun -np <span class="m">100</span> sumo example file_modelparameters_example <span class="m">500</span> <span class="m">10000</span> <span class="m">1</span> <span class="m">100000000</span> <span class="m">5</span> <span class="m">5</span> <span class="m">50</span> &gt; outfile_sumo
+</pre></div>
+Here example, <code>file_modelparameters_example</code>, <code>500</code>, <code>10000</code>, and <code>1</code> mean same as before (keep the same as
+when running suse).
+<code>100000000</code> means use a (fiducial) total number of 100000000 packets
+(this is, in fact, not really the total number of packets, let it
+be 100000000 for now). <code>5 5 50</code> means, use at least 5 packet per optical/infrared energy bin,
+at least 5 packets in the UV, and never use more than 50 packets.</p>
+<p>For sumo the number of processors can be anything (100 in the example).
+Scaling should be relatively linear with number of processors (but depends a lot
+on the number of packets).</p>
+<p>Then run
+<div class="codehilite"><pre><span></span>./gather.sh
+</pre></div>
+which is an intermediate step necessary between sumo and suib.</p>
+<h3 id="ex-suib-always-after-sumo">Ex suib (always after sumo):<a class="headerlink" href="#ex-suib-always-after-sumo" title="Permanent link">&para;</a></h3>
+<p><div class="codehilite"><pre><span></span>mpirun -np <span class="m">19</span> suib file_modelparameters_example y &gt; outfile_suib
+</pre></div>
+The <code>y</code> means its an iterative run.</p>
+<h2 id="preparing-input-files">PREPARING INPUT FILES<a class="headerlink" href="#preparing-input-files" title="Permanent link">&para;</a></h2>
+<p>The code needs 2 input files to run, the explosion model file, and the
+model parameters file.</p>
+<p>1) The explosion model file.</p>
+<p>An example file is provided (<code>DATA/expmodels/file_explmodel_example</code>).</p>
+<p>The format of these files should be as follows:
+<div class="codehilite"><pre><span></span>   Line
+   1  Name of model and then name of various zones
+   2  Mass of zone [Msun]
+   3  Inner velocity [km/s]
+   4  Outer velocity [km/s]
+   5  Filling factor. Is normally 1. But the code contains an option to macroscopically mix the first Ncore zones. The velocity limits for all these are then the inner velocity of zone 1 and the outer velocity of zone Ncore. The filling factor for each of the first Ncore zones can then be smaller than 1.
+   6  Density at 100 days [g cm^-3]. Not used by code, can put values to zero if wished.
+   7  ---------
+   8  56Ni+56Co mass fraction (at t=0, before any decay has occurred).
+   9  57Ni mass fraction (at t=0, before any decay has occured).
+   10 44Ti mass fraction (at t=0, before any decay has occured).
+   11 ---------
+   12 H mass fraction 
+   13 He -- &quot; --
+   14 C -- &quot; --
+   15 N -- &quot; --
+   16 O -- &quot; --
+   17 Ne -- &quot; --
+   18 Na -- &quot; --
+   19 Mg -- &quot; --
+   20 Si -- &quot; --
+   21 S -- &quot; --
+   22 Ar -- &quot; --
+   23 Ca -- &quot; --
+   24 Fe -- &quot; --
+   25 Co -- &quot; --
+   26 Ni -- &quot; --
+   27 Ti -- &quot; --
+   28 Al -- &quot; --
+   29 Cr -- &quot; --
+   30 Mn -- &quot; --
+   31 Sc -- &quot; --
+   32 V -- &quot; --
+</pre></div>
+   Note that line 25, 26 and 27 refers to <em>stable</em> Co, Ni and Ti.</p>
+<p>2) The model parameters file.</p>
+<p>This file should be created in the code execution directory.
+   An example file (<code>file_modelparameters_example</code>) is provided.</p>
+<p>The philosophy if the code design is to maintain a core source code that should not have to be recompiled depending on which models or parameter space to investigate. If you wish to run 10 different models with 10 different dust parameters, therefore create 10 different "run settings" files, and set up a script to process these in turn.  </p>
+<p>The format of <code>file_modelparameters</code> is as follows:
+<div class="codehilite"><pre><span></span>Row
+1        Time [days since explosion]
+2        Distance to SN [MPc]
+3        Dust optical depth [dim-less]
+4        Explosion model file (see above)
+5        Number of zones
+6        Ncore : Number of zones to macroscopically mix (&quot;0&quot; for no macroscopic mixing).
+7        Ndust : Number of zones to apply dust opacity to
+8        Nblobs : Number of clumps in macroscopically mixed model
+9        --------------------------
+10       VOID
+11       VOID
+12       VOID
+13       VOID
+14       VOID
+15       VOID
+16       VOID
+17       VOID
+18       -----------------------
+19       e+ leakage : 1 =&gt; free streaming (no magnetic field), 0 =&gt; on-the-spot absorption (complete magnetic confinement). 
+20       Npis :   Maximum number of levels to include photoionization from. 0 =&gt; no photoionizations from excited states. Typical value : 50
+21       PHOTOEXC : Include photoexcitation in NLTE solutions? 2 =&gt; Yes. 1 =&gt; Only deexcitations. 0: No. Typical value : 2.
+22       beta_Lya : Probability of Lya branching into overlapping metal lines. Typical value : 5E-9.
+23       beta_Lyb : Probability of Lyb branching into overlapping metal lines. Typical value : 2.1E-5.
+24       tau_tresh : Ignore line optical depths below this value. Typical value : 1E-3.
+25       sf_tresh : Ignore computation of non-thermal excitation and ionization for elements with mass fractions below this value. Typical value 1E-3.
+26       CTON : .T. =&gt; Charge transfer reactions on. .F. =&gt; Off. Typical value : .T.
+27       MOLSW : 0 =&gt; No molecules. 1 =&gt; Include molecules. CURRENTLY ONLY 0 supported.
+28       OLI : Allow only photoionization by local radiation field? .F. =&gt; No, .T.=&gt; Yes. Default : 0.
+29       REALRECCONT_H : Use real free-bound continua for HI? .T. =&gt; Yes. .F. =&gt; No (then uses box-shaped approximation as for other elements). Typical value : .T.
+30       FORCECAII : Force Ca to be in the Ca II form everywhere? .F. =&gt; no, .T. =&gt; yes. Typical value : .F.
+31       VOID
+32       VOID
+33       DOPRINT : Print a lot of output? .T. =&gt; Yes, .F. =&gt; No. Typical value: .F.
+34       -----------------------------------
+35       HI : Entry 1 : Allow this atom to emit radiation? Entry 2: Allow this atom to absorb radiation? Entry 3 : How many levels to compute NLTE solutions for? (0=all).
+         ...
+81       H2 ... (same as above)
+</pre></div></p>
+<h2 id="examining-the-output">EXAMINING THE OUTPUT<a class="headerlink" href="#examining-the-output" title="Permanent link">&para;</a></h2>
+<p>Spectrum</p>
+<hr />
+<p>The main output of the code is the model spectrum, which goes to the file <code>$DD/modelspectra/spectrum.dat*IDNUMBER*</code>.
+   The columns in this file are as follows:</p>
+<div class="codehilite"><pre><span></span>   1  Wavelength [A]
+   2  F_lambda [erg s^-1 cm^-1 A^-1]
+   3  F_lambda, smoothed with Vsmooth
+   4    component1..
+   5    component2..
+   ..
+   ..
+</pre></div>
+
+<p>Temperatures (from suse)</p>
+<hr />
+<p>Written to <code>./out/plts/teqs.dat*SHELLNUMBER*</code></p>
+<p>Excitation (from suse)</p>
+<hr />
+<p>Written to <code>./DATA/EXC_CUBE.dat*SHELLNUMBER*</code></p>
+<p>Ionization (from suib)</p>
+<hr />
+<p>Written to <code>./out/ionization/ionfracs.dat*SHELLNUMBER*</code></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 The SUMO Team
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a353778b.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.sv.js"></script>
+              
+            
+          
+          
+            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
